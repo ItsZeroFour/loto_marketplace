@@ -1,0 +1,130 @@
+.best_loto {
+  margin-bottom: 60px;
+}
+
+.best__loto__wrapper > h2 {
+  font-size: 32px;
+  font-family: "Montserrat-bd", sans-serif;
+  margin-bottom: 40px;
+
+  @media (max-width: 430px) {
+    font-size: 28px;
+  }
+}
+
+.best__loto__slide {
+  width: 560px;
+  height: 470px;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 25px;
+  border-radius: 30px;
+
+  @media (max-width: 1190px) {
+    width: 95%;
+  }
+
+  @media (max-width: 520px) {
+    width: 90%;
+  }
+
+  @media (max-width: 430px) {
+    width: 83vw;
+  }
+}
+
+.best__loto__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+  font-size: 32px;
+  font-family: "Montserrat-bd", sans-serif;
+  font-weight: 700;
+
+  @media (max-width: 520px) {
+    font-size: 24px;
+  }
+
+  img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+
+  div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  button {
+    background: none;
+    cursor: pointer;
+
+    img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
+
+.best__loto__stats {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p:first-child {
+      font-size: 20px;
+
+      @media (max-width: 520px) {
+        font-size: 16px;
+      }
+    }
+
+    p:last-child {
+      font-size: 24px;
+      font-family: "Montserrat-sb", sans-serif;
+      font-weight: 600;
+
+      @media (max-width: 520px) {
+        font-size: 20px;
+      }
+
+      @media (max-width: 450px) {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+.best__loto__slide {
+  a {
+    margin-top: 40px;
+    display: block;
+    width: 93%;
+    background: #4c84ff;
+    color: var(--color-white);
+    text-align: center;
+    border-radius: 30px;
+    padding: 20px;
+
+    @media (max-width: 1190px) {
+      width: 96%;
+    }
+
+    @media (max-width: 520px) {
+      width: 90%;
+    }
+  }
+}
+
+.best__loto__slide_2 {
+  margin-top: 60px;
+}

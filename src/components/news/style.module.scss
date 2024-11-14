@@ -1,0 +1,74 @@
+.news {
+  margin-top: 60px;
+
+  h2 {
+    font-size: 42px;
+    font-family: "Montserrat-bd", sans-serif;
+    margin-bottom: 30px;
+
+    @media (max-width: 430px) {
+      font-size: 28px;
+    }
+  }
+}
+
+.best__loto__slide {
+  width: 550px;
+  height: 270px;
+  padding: 25px;
+  border-radius: 30px;
+  background: #4c84ff;
+
+  @media (max-width: 1190px) {
+    width: 95%;
+  }
+
+  @media (max-width: 520px) {
+    width: 90%;
+    min-height: 200px;
+  }
+
+  @media (max-width: 430px) {
+    width: 81vw;
+  }
+}
+
+.best__loto__slide {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+
+  h3 {
+    font-size: 24px;
+
+    @media (max-width: 520px) {
+      font-size: 20px;
+    }
+
+    @media (max-width: 430px) {
+      font-size: 16px;
+    }
+  }
+
+  p {
+    margin-top: 10px;
+
+    @media (max-width: 430px) {
+      font-size: 14px;
+    }
+  }
+}
+
+.best__loto__left {
+  img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+
+    @media (max-width: 520px) {
+      width: 100px;
+      height: 100px;
+    }
+  }
+}
