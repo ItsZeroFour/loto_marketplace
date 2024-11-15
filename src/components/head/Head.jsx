@@ -9,30 +9,37 @@ const Head = ({ scrollToElement }) => {
       <div className="container">
         <div className={style.head__wrapper}>
           <aside className={style.head__left}>
-            <h1>
-              Ваш шанс на выигрыш в один клик! <br /> Лотерейные билеты онлайн
-            </h1>
-            <ul>
-              <li>
-                <p>Быстрая покупка</p>
-              </li>
+            <div className={style.head__main}>
+              <h1>
+                Ваш шанс на выигрыш в один клик! <br /> Лотерейные билеты онлайн
+              </h1>
 
-              <li>
-                <p>Широкий выбор</p>
-              </li>
+              <div className={style.head__image_con}>
+                <div className={`${style.head__image} ${style.head__image_2}`}>
+                  <img src={woman} alt="woman" />
+                </div>
+              </div>
 
-              <li>
-                <p>Безопасность</p>
-              </li>
-            </ul>
+              <ul>
+                <li>
+                  <p>Быстрая покупка</p>
+                </li>
 
-            <Link onClick={scrollToElement} to="#loto">
-              Купить билеты
-            </Link>
-          </aside>
+                <li>
+                  <p>Широкий выбор</p>
+                </li>
 
-          <aside className={style.head__right}>
-            <div className={style.head__image}>
+                <li>
+                  <p>Безопасность</p>
+                </li>
+              </ul>
+
+              <Link onClick={scrollToElement} to="#loto">
+                Купить билеты
+              </Link>
+            </div>
+
+            <div className={`${style.head__image} ${style.head__image_1}`}>
               <img src={woman} alt="woman" />
             </div>
           </aside>
