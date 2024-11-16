@@ -34,7 +34,7 @@ const News = () => {
               loop={true}
               grabCursor={true}
               pagination={{
-                el: ".custom-pagination",
+                el: ".custom-pagination-3",
                 type: "bullets",
                 clickable: true,
               }}
@@ -100,7 +100,7 @@ const News = () => {
               </SwiperSlide>
             </Swiper>
 
-            <div className="custom-pagination"></div>
+            <div className="custom-pagination-3"></div>
           </div>
         </div>
       </div>

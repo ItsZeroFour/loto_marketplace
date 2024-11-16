@@ -10,8 +10,21 @@ import { Pagination } from "swiper/modules";
 import info from "../../assets/icons/info.svg";
 
 const BestLoto = ({ myRef }) => {
+  const [itemText, setItemText] = useState("");
+
   return (
     <section className={style.best_loto} id="loto" ref={myRef}>
+      {itemText !== "" && (
+        <div className={style.best_loto__modal}>
+          <div className={style.best_loto__modal__container}>
+            <div
+              className={style.best_loto__modal_close}
+              onClick={() => setItemText("")}
+            ></div>
+            <p>{itemText}</p>
+          </div>
+        </div>
+      )}
       <div className="container">
         <div className={style.best__loto__wrapper}>
           <h2>Лучшие Лотереи в Одном Месте</h2>
@@ -47,7 +60,13 @@ const BestLoto = ({ myRef }) => {
                       <p>Столото</p>
                     </div>
 
-                    <button>
+                    <button
+                      onClick={() =>
+                        setItemText(
+                          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam aut nobis nostrum voluptatibus fuga, facere vitae asperiores quisquam doloribus provident natus odit, veniam nulla fugiat. Dignissimos sunt sed repellat blanditiis, inventore similique sint ut, architecto officiis tempore labore? Repudiandae error voluptates cumque ipsa tempora veniam beatae, praesentium ipsam, ex nemo esse dolores vel eaque obcaecati quidem magnam modi deserunt necessitatibus inventore explicabo vitae omnis doloremque rem. Dolores, dolore recusandae, dolorem fuga commodi facere explicabo laboriosam non quasi illum dolorum id praesentium mollitia ipsa sequi vero tempora delectus assumenda laborum quis laudantium temporibus! Excepturi dolorem, odio deleniti ea expedita necessitatibus rem!"
+                        )
+                      }
+                    >
                       <img src={info} alt="info" />
                     </button>
                   </div>
@@ -91,7 +110,13 @@ const BestLoto = ({ myRef }) => {
                       <p>Столото</p>
                     </div>
 
-                    <button>
+                    <button
+                      onClick={() =>
+                        setItemText(
+                          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam aut nobis nostrum voluptatibus fuga, facere vitae asperiores quisquam doloribus provident natus odit, veniam nulla fugiat. Dignissimos sunt sed repellat blanditiis, inventore similique sint ut, architecto officiis tempore labore? Repudiandae error voluptates cumque ipsa tempora veniam beatae, praesentium ipsam, ex nemo esse dolores vel eaque obcaecati quidem magnam modi deserunt necessitatibus inventore explicabo vitae omnis doloremque rem. Dolores, dolore recusandae, dolorem fuga commodi facere explicabo laboriosam non quasi illum dolorum id praesentium mollitia ipsa sequi vero tempora delectus assumenda laborum quis laudantium temporibus! Excepturi dolorem, odio deleniti ea expedita necessitatibus rem!"
+                        )
+                      }
+                    >
                       <img src={info} alt="info" />
                     </button>
                   </div>
@@ -135,7 +160,13 @@ const BestLoto = ({ myRef }) => {
                       <p>Столото</p>
                     </div>
 
-                    <button>
+                    <button
+                      onClick={() =>
+                        setItemText(
+                          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam aut nobis nostrum voluptatibus fuga, facere vitae asperiores quisquam doloribus provident natus odit, veniam nulla fugiat. Dignissimos sunt sed repellat blanditiis, inventore similique sint ut, architecto officiis tempore labore? Repudiandae error voluptates cumque ipsa tempora veniam beatae, praesentium ipsam, ex nemo esse dolores vel eaque obcaecati quidem magnam modi deserunt necessitatibus inventore explicabo vitae omnis doloremque rem. Dolores, dolore recusandae, dolorem fuga commodi facere explicabo laboriosam non quasi illum dolorum id praesentium mollitia ipsa sequi vero tempora delectus assumenda laborum quis laudantium temporibus! Excepturi dolorem, odio deleniti ea expedita necessitatibus rem!"
+                        )
+                      }
+                    >
                       <img src={info} alt="info" />
                     </button>
                   </div>
@@ -179,7 +210,13 @@ const BestLoto = ({ myRef }) => {
                       <p>Столото</p>
                     </div>
 
-                    <button>
+                    <button
+                      onClick={() =>
+                        setItemText(
+                          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam aut nobis nostrum voluptatibus fuga, facere vitae asperiores quisquam doloribus provident natus odit, veniam nulla fugiat. Dignissimos sunt sed repellat blanditiis, inventore similique sint ut, architecto officiis tempore labore? Repudiandae error voluptates cumque ipsa tempora veniam beatae, praesentium ipsam, ex nemo esse dolores vel eaque obcaecati quidem magnam modi deserunt necessitatibus inventore explicabo vitae omnis doloremque rem. Dolores, dolore recusandae, dolorem fuga commodi facere explicabo laboriosam non quasi illum dolorum id praesentium mollitia ipsa sequi vero tempora delectus assumenda laborum quis laudantium temporibus! Excepturi dolorem, odio deleniti ea expedita necessitatibus rem!"
+                        )
+                      }
+                    >
                       <img src={info} alt="info" />
                     </button>
                   </div>
@@ -250,7 +287,13 @@ const BestLoto = ({ myRef }) => {
                       <p>Fonbet</p>
                     </div>
 
-                    <button>
+                    <button
+                      onClick={() =>
+                        setItemText(
+                          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam aut nobis nostrum voluptatibus fuga, facere vitae asperiores quisquam doloribus provident natus odit, veniam nulla fugiat. Dignissimos sunt sed repellat blanditiis, inventore similique sint ut, architecto officiis tempore labore? Repudiandae error voluptates cumque ipsa tempora veniam beatae, praesentium ipsam, ex nemo esse dolores vel eaque obcaecati quidem magnam modi deserunt necessitatibus inventore explicabo vitae omnis doloremque rem. Dolores, dolore recusandae, dolorem fuga commodi facere explicabo laboriosam non quasi illum dolorum id praesentium mollitia ipsa sequi vero tempora delectus assumenda laborum quis laudantium temporibus! Excepturi dolorem, odio deleniti ea expedita necessitatibus rem!"
+                        )
+                      }
+                    >
                       <img src={info} alt="info" />
                     </button>
                   </div>
@@ -294,7 +337,13 @@ const BestLoto = ({ myRef }) => {
                       <p>Fonbet</p>
                     </div>
 
-                    <button>
+                    <button
+                      onClick={() =>
+                        setItemText(
+                          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam aut nobis nostrum voluptatibus fuga, facere vitae asperiores quisquam doloribus provident natus odit, veniam nulla fugiat. Dignissimos sunt sed repellat blanditiis, inventore similique sint ut, architecto officiis tempore labore? Repudiandae error voluptates cumque ipsa tempora veniam beatae, praesentium ipsam, ex nemo esse dolores vel eaque obcaecati quidem magnam modi deserunt necessitatibus inventore explicabo vitae omnis doloremque rem. Dolores, dolore recusandae, dolorem fuga commodi facere explicabo laboriosam non quasi illum dolorum id praesentium mollitia ipsa sequi vero tempora delectus assumenda laborum quis laudantium temporibus! Excepturi dolorem, odio deleniti ea expedita necessitatibus rem!"
+                        )
+                      }
+                    >
                       <img src={info} alt="info" />
                     </button>
                   </div>
@@ -338,7 +387,13 @@ const BestLoto = ({ myRef }) => {
                       <p>Fonbet</p>
                     </div>
 
-                    <button>
+                    <button
+                      onClick={() =>
+                        setItemText(
+                          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam aut nobis nostrum voluptatibus fuga, facere vitae asperiores quisquam doloribus provident natus odit, veniam nulla fugiat. Dignissimos sunt sed repellat blanditiis, inventore similique sint ut, architecto officiis tempore labore? Repudiandae error voluptates cumque ipsa tempora veniam beatae, praesentium ipsam, ex nemo esse dolores vel eaque obcaecati quidem magnam modi deserunt necessitatibus inventore explicabo vitae omnis doloremque rem. Dolores, dolore recusandae, dolorem fuga commodi facere explicabo laboriosam non quasi illum dolorum id praesentium mollitia ipsa sequi vero tempora delectus assumenda laborum quis laudantium temporibus! Excepturi dolorem, odio deleniti ea expedita necessitatibus rem!"
+                        )
+                      }
+                    >
                       <img src={info} alt="info" />
                     </button>
                   </div>
@@ -382,7 +437,13 @@ const BestLoto = ({ myRef }) => {
                       <p>Fonbet</p>
                     </div>
 
-                    <button>
+                    <button
+                      onClick={() =>
+                        setItemText(
+                          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam aut nobis nostrum voluptatibus fuga, facere vitae asperiores quisquam doloribus provident natus odit, veniam nulla fugiat. Dignissimos sunt sed repellat blanditiis, inventore similique sint ut, architecto officiis tempore labore? Repudiandae error voluptates cumque ipsa tempora veniam beatae, praesentium ipsam, ex nemo esse dolores vel eaque obcaecati quidem magnam modi deserunt necessitatibus inventore explicabo vitae omnis doloremque rem. Dolores, dolore recusandae, dolorem fuga commodi facere explicabo laboriosam non quasi illum dolorum id praesentium mollitia ipsa sequi vero tempora delectus assumenda laborum quis laudantium temporibus! Excepturi dolorem, odio deleniti ea expedita necessitatibus rem!"
+                        )
+                      }
+                    >
                       <img src={info} alt="info" />
                     </button>
                   </div>
