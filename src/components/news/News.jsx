@@ -12,12 +12,16 @@ import { Link } from "react-router-dom";
 import arrowLeft from "../../assets/icons/arrow-left.svg";
 import arrowRight from "../../assets/icons/arrow-right.svg";
 
-const News = () => {
+const News = ({ scrollToElement }) => {
   const swiperRef = useRef(null);
 
   return (
     <section className={style.news}>
       <div className="container">
+        <div className={style.news__button}>
+          <button onClick={scrollToElement}>Купить билеты</button>
+        </div>
+
         <div className={style.news__wrapper}>
           <h2>Главные новости</h2>
 

@@ -17,7 +17,9 @@ const Faq = () => {
               <li>
                 <div
                   className={style.faq__item}
-                  onClick={() => setShowTextIndex(0)}
+                  onClick={() =>
+                    setShowTextIndex(showTextIndex === 0 ? null : 0)
+                  }
                 >
                   <p>Выберите билет</p>
                   <img src={triangle} alt="triangle" />
@@ -39,7 +41,9 @@ const Faq = () => {
               <li>
                 <div
                   className={style.faq__item}
-                  onClick={() => setShowTextIndex(1)}
+                  onClick={() =>
+                    setShowTextIndex(showTextIndex === 1 ? null : 1)
+                  }
                 >
                   <p>Оплатите</p>
                   <img src={triangle} alt="triangle" />
@@ -61,7 +65,7 @@ const Faq = () => {
               <li>
                 <div
                   className={style.faq__item}
-                  onClick={() => setShowTextIndex(2)}
+                  onClick={() => setShowTextIndex(showTextIndex === 2 ? null : 2)}
                 >
                   <p>Следите за розыгрышем</p>
                   <img src={triangle} alt="triangle" />
@@ -81,7 +85,7 @@ const Faq = () => {
               <li>
                 <div
                   className={style.faq__item}
-                  onClick={() => setShowTextIndex(3)}
+                  onClick={() => setShowTextIndex(showTextIndex === 3 ? null : 3)}
                 >
                   <p>Получите выигрыш</p>
                   <img src={triangle} alt="triangle" />

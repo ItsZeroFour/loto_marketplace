@@ -41,7 +41,7 @@ function App() {
           <BestLoto myRef={myRef} />
           <Winners />
           <Faq />
-          <News />
+          <News scrollToElement={scrollToElement} />
         </main>
 
         <Footer />

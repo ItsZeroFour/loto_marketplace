@@ -12,6 +12,30 @@
   }
 }
 
+.news__button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 30px;
+
+  button {
+    width: 600px;
+    padding: 20px;
+    background: var(--color-red);
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+    color: var(--color-white);
+
+    @media (max-width: 650px) {
+      width: 90%;
+    }
+  }
+}
+
 .best__loto__slide {
   width: 550px;
   height: 270px;
