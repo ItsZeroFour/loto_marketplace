@@ -26,16 +26,23 @@ const Footer = () => {
           <aside className={style.footer__right}>
             <div className={style.footer__organizators}>
               <p>
-                Организаторами лотерей являются Министерство спорта РФ
-                и Министерство финансов РФ.
+                Организатор лотереи:{" "}
+                <a href="https://minfin.gov.ru/">
+                  Министерство финансов Российской Федерации
+                </a>
+                Лотерея проводится на основании распоряжения Правительства
+                Российской Федерации от 29 августа 2019 г. N 1921-р.
               </p>
 
               <p style={{ fontSize: 12, marginTop: 10, marginBottom: 10 }}>
                 Лотереи проводятся на основании распоряжения Правительства
                 Российской Федерации от 29 августа 2019 г. № 1921-р. Организатор
-                лотерей: Министерство финансов Российской Федерации. Оператор
                 лотерей:{" "}
-                <a href="https://static.stoloto.ru/files/documents/polozhenie_ob_amk_bez_prikaza.pdf" >
+                <a href="https://minfin.gov.ru/">
+                  Министерство финансов Российской Федерации
+                </a>
+                . Оператор лотерей:{" "}
+                <a href="https://static.stoloto.ru/files/documents/polozhenie_ob_amk_bez_prikaza.pdf">
                   ООО «Спортивные Лотереи»
                 </a>
                 . Тел. 8 800 333-7-333. Сведения о рекламодателе:{" "}

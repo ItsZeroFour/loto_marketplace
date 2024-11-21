@@ -16,6 +16,13 @@
   a {
     text-decoration: underline;
   }
+
+  @media (max-width: 1190px) {
+    h3 {
+      text-align: center;
+      font-size: 26px;
+    }
+  }
 }
 
 .footer__left > a > img {
