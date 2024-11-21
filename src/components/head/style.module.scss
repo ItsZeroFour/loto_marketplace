@@ -116,7 +116,7 @@
 
   ul {
     display: flex;
-    gap: 20px;
+    gap: 10px;
 
     @media (max-width: 670px) {
       flex-wrap: wrap;
@@ -127,13 +127,11 @@
     }
 
     li {
-      padding: 15px 20px;
-      border-radius: 40px;
-      border: 1px solid var(--color-white);
-
-      @media (max-width: 375px) {
-        padding: 10px 15px;
-      }
+      list-style-type: disc;
+      margin-left: 20px;
+      font-size: 20px;
+      font-family: "Montserrat-md", sans-serif;
+      font-weight: 500;
     }
   }
 
@@ -151,21 +149,6 @@
 
     @media (max-width: 1190px) {
       width: 100%;
-      position: absolute;
-      top: 800px;
-      z-index: 2;
-    }
-
-    @media (max-width: 670px) {
-      top: 560px;
-    }
-
-    @media (max-width: 520px) {
-      top: 450px;
-    }
-
-    @media (max-width: 400px) {
-      top: 450px;
     }
   }
 }

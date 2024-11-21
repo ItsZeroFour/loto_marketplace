@@ -170,50 +170,6 @@ const BestLoto = ({ myRef }) => {
                   <Link to="#">Купить билет</Link>
                 </div>
               </SwiperSlide>
-
-              <SwiperSlide>
-                <div className={style.best__loto__slide}>
-                  <div className={style.best__loto__top}>
-                    <div>
-                      <img src={_100loto} alt="100loto" />
-                      <p>Столото</p>
-                    </div>
-
-                    <button>
-                      <img src={info} alt="info" />
-                    </button>
-                  </div>
-
-                  <ul className={style.best__loto__stats}>
-                    <li>
-                      <p>Призовой фонд:</p>
-                      <p>700 000 - 4 000 000₽</p>
-                    </li>
-
-                    <li>
-                      <p>Стоимость билета:</p>
-                      <p>250₽</p>
-                    </li>
-
-                    <li>
-                      <p>Шанс на выигрыш:</p>
-                      <p>10%</p>
-                    </li>
-
-                    <li>
-                      <p>Популярность:</p>
-                      <p>Популярна</p>
-                    </li>
-
-                    <li>
-                      <p>Тип лотереи:</p>
-                      <p>Розыгрыш с билетом</p>
-                    </li>
-                  </ul>
-
-                  <Link to="#">Купить билет</Link>
-                </div>
-              </SwiperSlide>
             </Swiper>
 
             <div className="custom-pagination"></div>
