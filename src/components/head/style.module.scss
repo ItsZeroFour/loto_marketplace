@@ -1,5 +1,9 @@
 .head {
   margin-top: 60px;
+
+  @media (max-width: 1190px) {
+    margin-top: 20px;
+  }
 }
 
 .head__image_2 {
