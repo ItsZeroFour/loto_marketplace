@@ -75,14 +75,18 @@ li {
 }
 
 .custom-pagination,
-.custom-pagination-2 {
+.custom-pagination-2,
+.custom-pagination-3,
+.custom-pagination-4 {
   display: flex;
   justify-content: center;
   padding-top: 10px;
 }
 
 .custom-pagination .swiper-pagination-bullet,
-.custom-pagination-2 .swiper-pagination-bullet {
+.custom-pagination-2 .swiper-pagination-bullet,
+.custom-pagination-3 .swiper-pagination-bullet,
+.custom-pagination-4 .swiper-pagination-bullet {
   background-color: #fff;
   opacity: 1;
   width: 12px;
@@ -93,7 +97,9 @@ li {
 }
 
 .custom-pagination .swiper-pagination-bullet-active,
-.custom-pagination-2 .swiper-pagination-bullet-active {
+.custom-pagination-2 .swiper-pagination-bullet-active,
+.custom-pagination-3 .swiper-pagination-bullet-active,
+.custom-pagination-4 .swiper-pagination-bullet-active {
   background-color: var(--color-blue-sec);
 }
 

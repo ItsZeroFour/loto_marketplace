@@ -10,8 +10,22 @@ import { Pagination } from "swiper/modules";
 import info from "../../assets/icons/info.svg";
 
 const BestLoto = ({ myRef }) => {
+  const [itemText, setItemText] = useState("");
+  const [openInfoMenuIndex, setOpenInfoMenuIndex] = useState(null);
+
   return (
     <section className={style.best_loto} id="loto" ref={myRef}>
+      {itemText !== "" && (
+        <div className={style.best_loto__modal}>
+          <div className={style.best_loto__modal__container}>
+            <div
+              className={style.best_loto__modal_close}
+              onClick={() => setItemText("")}
+            ></div>
+            <p>{itemText}</p>
+          </div>
+        </div>
+      )}
       <div className="container">
         <div className={style.best__loto__wrapper}>
           <h2>Лучшие Лотереи в Одном Месте</h2>
@@ -47,7 +61,26 @@ const BestLoto = ({ myRef }) => {
                       <p>Столото</p>
                     </div>
 
-                    <button>
+                    {openInfoMenuIndex === 1 && (
+                      <div
+                        className={style.best__loto__slide__info}
+                        onMouseEnter={() => setOpenInfoMenuIndex(1)}
+                        onMouseLeave={() => setOpenInfoMenuIndex(null)}
+                      >
+                        <Link
+                          target="_blank"
+                          to="https://static.stoloto.ru/files/documents/polozhenie_ob_amk_bez_prikaza.pdf"
+                          onClick={() => setOpenInfoMenuIndex(null)}
+                        >
+                          Документы
+                        </Link>
+                      </div>
+                    )}
+
+                    <button
+                      onMouseEnter={() => setOpenInfoMenuIndex(1)}
+                      onMouseLeave={() => setOpenInfoMenuIndex(null)}
+                    >
                       <img src={info} alt="info" />
                     </button>
                   </div>
@@ -91,7 +124,26 @@ const BestLoto = ({ myRef }) => {
                       <p>Столото</p>
                     </div>
 
-                    <button>
+                    {openInfoMenuIndex === 2 && (
+                      <div
+                        className={style.best__loto__slide__info}
+                        onMouseEnter={() => setOpenInfoMenuIndex(2)}
+                        onMouseLeave={() => setOpenInfoMenuIndex(null)}
+                      >
+                        <Link
+                          target="_blank"
+                          to="https://static.stoloto.ru/files/documents/polozhenie_ob_amk_bez_prikaza.pdf"
+                          onClick={() => setOpenInfoMenuIndex(null)}
+                        >
+                          Документы
+                        </Link>
+                      </div>
+                    )}
+
+                    <button
+                      onMouseEnter={() => setOpenInfoMenuIndex(2)}
+                      onMouseLeave={() => setOpenInfoMenuIndex(null)}
+                    >
                       <img src={info} alt="info" />
                     </button>
                   </div>
@@ -135,7 +187,26 @@ const BestLoto = ({ myRef }) => {
                       <p>Столото</p>
                     </div>
 
-                    <button>
+                    {openInfoMenuIndex === 3 && (
+                      <div
+                        className={style.best__loto__slide__info}
+                        onMouseEnter={() => setOpenInfoMenuIndex(3)}
+                        onMouseLeave={() => setOpenInfoMenuIndex(null)}
+                      >
+                        <Link
+                          target="_blank"
+                          to="https://static.stoloto.ru/files/documents/polozhenie_ob_amk_bez_prikaza.pdf"
+                          onClick={() => setOpenInfoMenuIndex(null)}
+                        >
+                          Документы
+                        </Link>
+                      </div>
+                    )}
+
+                    <button
+                      onMouseEnter={() => setOpenInfoMenuIndex(3)}
+                      onMouseLeave={() => setOpenInfoMenuIndex(null)}
+                    >
                       <img src={info} alt="info" />
                     </button>
                   </div>
@@ -206,7 +277,26 @@ const BestLoto = ({ myRef }) => {
                       <p>Fonbet</p>
                     </div>
 
-                    <button>
+                    {openInfoMenuIndex === 4 && (
+                      <div
+                        className={style.best__loto__slide__info}
+                        onMouseEnter={() => setOpenInfoMenuIndex(4)}
+                        onMouseLeave={() => setOpenInfoMenuIndex(null)}
+                      >
+                        <Link
+                          target="_blank"
+                          to="https://static.stoloto.ru/files/documents/polozhenie_ob_amk_bez_prikaza.pdf"
+                          onClick={() => setOpenInfoMenuIndex(null)}
+                        >
+                          Документы
+                        </Link>
+                      </div>
+                    )}
+
+                    <button
+                      onMouseEnter={() => setOpenInfoMenuIndex(4)}
+                      onMouseLeave={() => setOpenInfoMenuIndex(null)}
+                    >
                       <img src={info} alt="info" />
                     </button>
                   </div>
@@ -250,7 +340,26 @@ const BestLoto = ({ myRef }) => {
                       <p>Fonbet</p>
                     </div>
 
-                    <button>
+                    {openInfoMenuIndex === 5 && (
+                      <div
+                        className={style.best__loto__slide__info}
+                        onMouseEnter={() => setOpenInfoMenuIndex(5)}
+                        onMouseLeave={() => setOpenInfoMenuIndex(null)}
+                      >
+                        <Link
+                          target="_blank"
+                          to="https://static.stoloto.ru/files/documents/polozhenie_ob_amk_bez_prikaza.pdf"
+                          onClick={() => setOpenInfoMenuIndex(null)}
+                        >
+                          Документы
+                        </Link>
+                      </div>
+                    )}
+
+                    <button
+                      onMouseEnter={() => setOpenInfoMenuIndex(5)}
+                      onMouseLeave={() => setOpenInfoMenuIndex(null)}
+                    >
                       <img src={info} alt="info" />
                     </button>
                   </div>
@@ -294,51 +403,26 @@ const BestLoto = ({ myRef }) => {
                       <p>Fonbet</p>
                     </div>
 
-                    <button>
-                      <img src={info} alt="info" />
-                    </button>
-                  </div>
+                    {openInfoMenuIndex === 6 && (
+                      <div
+                        className={style.best__loto__slide__info}
+                        onMouseEnter={() => setOpenInfoMenuIndex(6)}
+                        onMouseLeave={() => setOpenInfoMenuIndex(null)}
+                      >
+                        <Link
+                          target="_blank"
+                          to="https://static.stoloto.ru/files/documents/polozhenie_ob_amk_bez_prikaza.pdf"
+                          onClick={() => setOpenInfoMenuIndex(null)}
+                        >
+                          Документы
+                        </Link>
+                      </div>
+                    )}
 
-                  <ul className={style.best__loto__stats}>
-                    <li>
-                      <p>Призовой фонд:</p>
-                      <p>700 000 - 4 000 000₽</p>
-                    </li>
-
-                    <li>
-                      <p>Стоимость билета:</p>
-                      <p>250₽</p>
-                    </li>
-
-                    <li>
-                      <p>Шанс на выигрыш:</p>
-                      <p>10%</p>
-                    </li>
-
-                    <li>
-                      <p>Популярность:</p>
-                      <p>Популярна</p>
-                    </li>
-
-                    <li>
-                      <p>Тип лотереи:</p>
-                      <p>Розыгрыш с билетом</p>
-                    </li>
-                  </ul>
-
-                  <Link to="#">Купить билет</Link>
-                </div>
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <div className={style.best__loto__slide}>
-                  <div className={style.best__loto__top}>
-                    <div>
-                      <img src={fonbet_logo} alt="fonbet" />
-                      <p>Fonbet</p>
-                    </div>
-
-                    <button>
+                    <button
+                      onMouseEnter={() => setOpenInfoMenuIndex(6)}
+                      onMouseLeave={() => setOpenInfoMenuIndex(null)}
+                    >
                       <img src={info} alt="info" />
                     </button>
                   </div>

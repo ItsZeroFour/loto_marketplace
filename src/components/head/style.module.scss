@@ -32,7 +32,7 @@
   width: 805px;
   height: 605px;
   border-radius: 50%;
-  background: var(--color-red);
+  background: var(--color-white);
   overflow: hidden;
 
   @media (max-width: 1190px) {
@@ -57,14 +57,14 @@
 
   img {
     margin-top: 100px;
-    margin-left: 70px;
+    margin-left: 5px;
 
     width: 90%;
     height: 90%;
 
     @media (max-width: 520px) {
       margin-top: 40px;
-      margin-left: 40px;
+      margin-left: 0;
     }
   }
 
