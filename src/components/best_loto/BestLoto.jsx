@@ -80,6 +80,7 @@ const BestLoto = ({ myRef }) => {
                     <button
                       onMouseEnter={() => setOpenInfoMenuIndex(1)}
                       onMouseLeave={() => setOpenInfoMenuIndex(null)}
+                      onClick={() => setOpenInfoMenuIndex(1)}
                     >
                       <img src={info} alt="info" />
                     </button>
@@ -143,6 +144,7 @@ const BestLoto = ({ myRef }) => {
                     <button
                       onMouseEnter={() => setOpenInfoMenuIndex(2)}
                       onMouseLeave={() => setOpenInfoMenuIndex(null)}
+                      onClick={() => setOpenInfoMenuIndex(2)}
                     >
                       <img src={info} alt="info" />
                     </button>
@@ -206,6 +208,7 @@ const BestLoto = ({ myRef }) => {
                     <button
                       onMouseEnter={() => setOpenInfoMenuIndex(3)}
                       onMouseLeave={() => setOpenInfoMenuIndex(null)}
+                      onClick={() => setOpenInfoMenuIndex(3)}
                     >
                       <img src={info} alt="info" />
                     </button>
@@ -296,6 +299,7 @@ const BestLoto = ({ myRef }) => {
                     <button
                       onMouseEnter={() => setOpenInfoMenuIndex(4)}
                       onMouseLeave={() => setOpenInfoMenuIndex(null)}
+                      onClick={() => setOpenInfoMenuIndex(4)}
                     >
                       <img src={info} alt="info" />
                     </button>
@@ -359,6 +363,7 @@ const BestLoto = ({ myRef }) => {
                     <button
                       onMouseEnter={() => setOpenInfoMenuIndex(5)}
                       onMouseLeave={() => setOpenInfoMenuIndex(null)}
+                      onClick={() => setOpenInfoMenuIndex(5)}
                     >
                       <img src={info} alt="info" />
                     </button>
@@ -422,6 +427,7 @@ const BestLoto = ({ myRef }) => {
                     <button
                       onMouseEnter={() => setOpenInfoMenuIndex(6)}
                       onMouseLeave={() => setOpenInfoMenuIndex(null)}
+                      onClick={() => setOpenInfoMenuIndex(6)}
                     >
                       <img src={info} alt="info" />
                     </button>
