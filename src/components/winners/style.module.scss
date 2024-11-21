@@ -43,6 +43,12 @@
     @media (max-width: 380px) {
       width: 320px;
       height: 320px;
+
+      &:nth-child(2) {
+        img {
+          margin-right: 50px;
+        }
+      }
     }
   }
 
@@ -86,5 +92,20 @@
 
   @media (max-width: 430px) {
     font-size: 20px;
+  }
+}
+
+.winners__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  button {
+    background: none;
+
+    img {
+      width: 50px;
+      height: auto;
+    }
   }
 }

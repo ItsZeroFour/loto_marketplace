@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import style from "./style.module.scss";
 import { Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -9,7 +9,12 @@ import newsImg2 from "../../assets/images/news/2.jpg";
 import newsImg3 from "../../assets/images/news/3.webp";
 import { Link } from "react-router-dom";
 
+import arrowLeft from "../../assets/icons/arrow-left.svg";
+import arrowRight from "../../assets/icons/arrow-right.svg";
+
 const News = () => {
+  const swiperRef = useRef(null);
+
   return (
     <section className={style.news}>
       <div className="container">
@@ -21,6 +26,9 @@ const News = () => {
               modules={[Pagination]}
               spaceBetween={30} // Отступ между слайдами
               slidesPerView={2} // Изначально показываем два слайда
+              onBeforeInit={(swiper) => {
+                swiperRef.current = swiper; // Сохраняем экземпляр Swiper в реф
+              }}
               breakpoints={{
                 // Указываем, что на ширине 600 и меньше будет 1 слайд
                 1200: {
@@ -100,7 +108,17 @@ const News = () => {
               </SwiperSlide>
             </Swiper>
 
-            <div className="custom-pagination-3"></div>
+            {window.innerWidth <= 1190 && (
+              <div className={style.winners__nav}>
+                <button onClick={() => swiperRef.current?.slidePrev()}>
+                  <img src={arrowLeft} alt="left" />
+                </button>
+                <div className="custom-pagination-3"></div>
+                <button onClick={() => swiperRef.current?.slideNext()}>
+                  <img src={arrowRight} alt="right" />
+                </button>
+              </div>
+            )}
           </div>
         </div>
       </div>

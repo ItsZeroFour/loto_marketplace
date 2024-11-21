@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import style from "./style.module.scss";
 import winner1 from "../../assets/images/winners/1.png";
 import winner2 from "../../assets/images/winners/2.png";
@@ -7,8 +7,12 @@ import { Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
 import "swiper/css";
+import arrowLeft from "../../assets/icons/arrow-left.svg";
+import arrowRight from "../../assets/icons/arrow-right.svg";
 
 const Winners = () => {
+  const swiperRef = useRef(null);
+
   return (
     <section className={style.winners}>
       <div className="container">
@@ -19,6 +23,9 @@ const Winners = () => {
             modules={[Pagination]}
             spaceBetween={30} // Отступ между слайдами
             slidesPerView={3} // Изначально показываем два слайда
+            onBeforeInit={(swiper) => {
+              swiperRef.current = swiper; // Сохраняем экземпляр Swiper в реф
+            }}
             breakpoints={{
               // Указываем, что на ширине 600 и меньше будет 1 слайд
               1200: {
@@ -68,7 +75,17 @@ const Winners = () => {
             </SwiperSlide>
           </Swiper>
 
-          <div className="custom-pagination-4"></div>
+          {window.innerWidth <= 1190 && (
+            <div className={style.winners__nav}>
+              <button onClick={() => swiperRef.current?.slidePrev()}>
+                <img src={arrowLeft} alt="left" />
+              </button>
+              <div className="custom-pagination-4"></div>
+              <button onClick={() => swiperRef.current?.slideNext()}>
+                <img src={arrowRight} alt="right" />
+              </button>
+            </div>
+          )}
         </div>
       </div>
     </section>
