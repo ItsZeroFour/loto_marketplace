@@ -92,6 +92,16 @@
   flex-direction: column;
   gap: 20px;
   position: relative;
+
+  @media (max-width: 1190px) {
+    ul {
+      order: 1;
+    }
+
+    a {
+      order: 0;
+    }
+  }
 }
 
 .head__left {

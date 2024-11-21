@@ -42,6 +42,12 @@
     object-fit: contain;
   }
 
+  p {
+    a {
+      text-decoration: underline;
+    }
+  }
+
   div {
     display: flex;
     align-items: center;

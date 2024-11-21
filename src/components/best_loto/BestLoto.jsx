@@ -288,7 +288,7 @@ const BestLoto = ({ myRef }) => {
                       >
                         <Link
                           target="_blank"
-                          to="https://static.stoloto.ru/files/documents/polozhenie_ob_amk_bez_prikaza.pdf"
+                          to="https://nloto.ru/docs/%D0%9F%D1%80%D0%B8%D0%BA%D0%B0%D0%B7_%D0%9C%D0%B8%D0%BD%D1%84%D0%B8%D0%BD%D0%B0_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8_%D0%BE%D1%82_17.08.2022_%E2%84%96126%D0%BD.pdf"
                           onClick={() => setOpenInfoMenuIndex(null)}
                         >
                           Документы
@@ -352,7 +352,7 @@ const BestLoto = ({ myRef }) => {
                       >
                         <Link
                           target="_blank"
-                          to="https://static.stoloto.ru/files/documents/polozhenie_ob_amk_bez_prikaza.pdf"
+                          to="https://nloto.ru/docs/%D0%9F%D1%80%D0%B8%D0%BA%D0%B0%D0%B7_%D0%9C%D0%B8%D0%BD%D1%84%D0%B8%D0%BD%D0%B0_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8_%D0%BE%D1%82_17.08.2022_%E2%84%96126%D0%BD.pdf"
                           onClick={() => setOpenInfoMenuIndex(null)}
                         >
                           Документы
@@ -416,7 +416,7 @@ const BestLoto = ({ myRef }) => {
                       >
                         <Link
                           target="_blank"
-                          to="https://static.stoloto.ru/files/documents/polozhenie_ob_amk_bez_prikaza.pdf"
+                          to="https://nloto.ru/docs/%D0%9F%D1%80%D0%B8%D0%BA%D0%B0%D0%B7_%D0%9C%D0%B8%D0%BD%D1%84%D0%B8%D0%BD%D0%B0_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8_%D0%BE%D1%82_17.08.2022_%E2%84%96126%D0%BD.pdf"
                           onClick={() => setOpenInfoMenuIndex(null)}
                         >
                           Документы
