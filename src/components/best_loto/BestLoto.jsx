@@ -122,19 +122,19 @@ const BestLoto = ({ myRef }) => {
                 <div className={style.best__loto__slide}>
                   <div className={style.best__loto__top}>
                     <div className={style.best__loto__logo}>
-                      <img src={soon} alt="soon" />
-                      <p>Скоро будет</p>
+                      <img src={fonbet_logo} alt="fonbet" />
+                      <p>Fonbet</p>
                     </div>
 
-                    {openInfoMenuIndex === 2 && (
+                    {openInfoMenuIndex === 4 && (
                       <div
                         className={style.best__loto__slide__info}
-                        onMouseEnter={() => setOpenInfoMenuIndex(2)}
+                        onMouseEnter={() => setOpenInfoMenuIndex(4)}
                         onMouseLeave={() => setOpenInfoMenuIndex(null)}
                       >
                         <Link
                           target="_blank"
-                          to="https://static.stoloto.ru/files/documents/polozhenie_ob_amk_bez_prikaza.pdf"
+                          to="https://nloto.ru/docs/%D0%9F%D1%80%D0%B8%D0%BA%D0%B0%D0%B7_%D0%9C%D0%B8%D0%BD%D1%84%D0%B8%D0%BD%D0%B0_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8_%D0%BE%D1%82_17.08.2022_%E2%84%96126%D0%BD.pdf"
                           onClick={() => setOpenInfoMenuIndex(null)}
                         >
                           Документы
@@ -143,15 +143,15 @@ const BestLoto = ({ myRef }) => {
                     )}
 
                     <button
-                      onMouseEnter={() => setOpenInfoMenuIndex(2)}
+                      onMouseEnter={() => setOpenInfoMenuIndex(4)}
                       onMouseLeave={() => setOpenInfoMenuIndex(null)}
-                      onClick={() => setOpenInfoMenuIndex(2)}
+                      onClick={() => setOpenInfoMenuIndex(4)}
                     >
                       <img src={info} alt="info" />
                     </button>
                   </div>
 
-                  {/* <ul className={style.best__loto__stats}>
+                  <ul className={style.best__loto__stats}>
                     <li>
                       <p>Призовой фонд:</p>
                       <p>700 000 - 4 000 000₽</p>
@@ -176,9 +176,9 @@ const BestLoto = ({ myRef }) => {
                       <p>Тип лотереи:</p>
                       <p>Розыгрыш с билетом</p>
                     </li>
-                  </ul> */}
+                  </ul>
 
-                  {/* <Link to="#">Купить билет</Link> */}
+                  <Link to="#">Купить билет</Link>
                 </div>
               </SwiperSlide>
 
@@ -206,13 +206,13 @@ const BestLoto = ({ myRef }) => {
                       </div>
                     )}
 
-                    <button
+                    {/* <button
                       onMouseEnter={() => setOpenInfoMenuIndex(3)}
                       onMouseLeave={() => setOpenInfoMenuIndex(null)}
                       onClick={() => setOpenInfoMenuIndex(3)}
                     >
                       <img src={info} alt="info" />
-                    </button>
+                    </button> */}
                   </div>
 
                   {/* <ul className={style.best__loto__stats}>
@@ -341,19 +341,19 @@ const BestLoto = ({ myRef }) => {
                 <div className={style.best__loto__slide}>
                   <div className={style.best__loto__top}>
                     <div className={style.best__loto__logo}>
-                      <img src={soon} alt="fonbet" />
-                      <p>Скоро будет</p>
+                      <img src={_100loto} alt="100loto" />
+                      <p>Столото</p>
                     </div>
 
-                    {openInfoMenuIndex === 5 && (
+                    {openInfoMenuIndex === 1 && (
                       <div
                         className={style.best__loto__slide__info}
-                        onMouseEnter={() => setOpenInfoMenuIndex(5)}
+                        onMouseEnter={() => setOpenInfoMenuIndex(1)}
                         onMouseLeave={() => setOpenInfoMenuIndex(null)}
                       >
                         <Link
                           target="_blank"
-                          to="https://nloto.ru/docs/%D0%9F%D1%80%D0%B8%D0%BA%D0%B0%D0%B7_%D0%9C%D0%B8%D0%BD%D1%84%D0%B8%D0%BD%D0%B0_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8_%D0%BE%D1%82_17.08.2022_%E2%84%96126%D0%BD.pdf"
+                          to="https://static.stoloto.ru/files/documents/polozhenie_ob_amk_bez_prikaza.pdf"
                           onClick={() => setOpenInfoMenuIndex(null)}
                         >
                           Документы
@@ -362,15 +362,15 @@ const BestLoto = ({ myRef }) => {
                     )}
 
                     <button
-                      onMouseEnter={() => setOpenInfoMenuIndex(5)}
+                      onMouseEnter={() => setOpenInfoMenuIndex(1)}
                       onMouseLeave={() => setOpenInfoMenuIndex(null)}
-                      onClick={() => setOpenInfoMenuIndex(5)}
+                      onClick={() => setOpenInfoMenuIndex(1)}
                     >
                       <img src={info} alt="info" />
                     </button>
                   </div>
 
-                  {/* <ul className={style.best__loto__stats}>
+                  <ul className={style.best__loto__stats}>
                     <li>
                       <p>Призовой фонд:</p>
                       <p>700 000 - 4 000 000₽</p>
@@ -397,7 +397,7 @@ const BestLoto = ({ myRef }) => {
                     </li>
                   </ul>
 
-                  <Link to="#">Купить билет</Link> */}
+                  <Link to="#">Купить билет</Link>
                 </div>
               </SwiperSlide>
 
@@ -424,14 +424,14 @@ const BestLoto = ({ myRef }) => {
                         </Link>
                       </div>
                     )}
-
+{/* 
                     <button
                       onMouseEnter={() => setOpenInfoMenuIndex(6)}
                       onMouseLeave={() => setOpenInfoMenuIndex(null)}
                       onClick={() => setOpenInfoMenuIndex(6)}
                     >
                       <img src={info} alt="info" />
-                    </button>
+                    </button> */}
                   </div>
 
                   {/* <ul className={style.best__loto__stats}>
