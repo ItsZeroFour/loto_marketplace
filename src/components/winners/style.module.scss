@@ -28,6 +28,13 @@
   align-items: center;
   gap: 5px;
 
+  .winners__image {
+    img {
+      width: 320px;
+      height: auto;
+    }
+  }
+
   .winners__sum {
     background: #4c84ff;
     padding: 10px 40px;
