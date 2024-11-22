@@ -28,24 +28,6 @@
   align-items: center;
   gap: 5px;
 
-  .winners__image {
-    width: 380px;
-    height: 380px;
-    background: var(--color-white);
-    overflow: hidden;
-    border-radius: 50%;
-
-    img {
-      // margin-top: 60px;
-      // margin-left: 50px;
-    }
-
-    @media (max-width: 380px) {
-      width: 320px;
-      height: 320px;
-    }
-  }
-
   .winners__sum {
     background: #4c84ff;
     padding: 10px 40px;
