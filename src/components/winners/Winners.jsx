@@ -169,7 +169,7 @@ const Winners = () => {
               <button onClick={() => swiperRef.current?.slidePrev()}>
                 <img src={arrowLeft} alt="left" />
               </button>
-              <div className="custom-pagination-4"></div>
+              {/* <div className="custom-pagination-4"></div> */}
               <button onClick={() => swiperRef.current?.slideNext()}>
                 <img src={arrowRight} alt="right" />
               </button>
