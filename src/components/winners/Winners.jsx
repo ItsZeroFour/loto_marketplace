@@ -3,6 +3,14 @@ import style from "./style.module.scss";
 import winner1 from "../../assets/images/winners/1.png";
 import winner2 from "../../assets/images/winners/2.png";
 import winner3 from "../../assets/images/winners/3.png";
+import winner4 from "../../assets/images/winners/4.png";
+import winner5 from "../../assets/images/winners/5.png";
+import winner6 from "../../assets/images/winners/6.png";
+import winner7 from "../../assets/images/winners/7.png";
+import winner8 from "../../assets/images/winners/8.png";
+import winner9 from "../../assets/images/winners/9.png";
+import winner10 from "../../assets/images/winners/10.png";
+import winner11 from "../../assets/images/winners/11.png";
 import { Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
@@ -48,9 +56,9 @@ const Winners = () => {
               <div className={style.winners__image}>
                 <img src={winner1} alt="winner 1" />
               </div>
-              <p>Игорь Прогожников</p>
+              {/* <p></p> */}
               <div className={style.winners__sum}>
-                <p>1 700 000₽</p>
+                <p>7 611 425₽</p>
               </div>
             </SwiperSlide>
 
@@ -58,9 +66,9 @@ const Winners = () => {
               <div className={style.winners__image}>
                 <img src={winner2} alt="winner 1" />
               </div>
-              <p>Илья Воснесевский</p>
+              <p></p>
               <div className={style.winners__sum}>
-                <p>1 279 000₽</p>
+                <p>334 883 756₽</p>
               </div>
             </SwiperSlide>
 
@@ -68,14 +76,95 @@ const Winners = () => {
               <div className={style.winners__image}>
                 <img src={winner3} alt="winner 1" />
               </div>
-              <p>Маргарита Власова</p>
+              <p></p>
               <div className={style.winners__sum}>
-                <p>880 000₽</p>
+                <p>512 261 694 ₽</p>
               </div>
             </SwiperSlide>
+
+            <SwiperSlide className={style.winner__item}>
+              <div className={style.winners__image}>
+                <img src={winner4} alt="winner 1" />
+              </div>
+              <p></p>
+              <div className={style.winners__sum}>
+                <p>6 814 416₽</p>
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide className={style.winner__item}>
+              <div className={style.winners__image}>
+                <img src={winner5} alt="winner 1" />
+              </div>
+              <p></p>
+              <div className={style.winners__sum}>
+                <p>3 333 334₽</p>
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide className={style.winner__item}>
+              <div className={style.winners__image}>
+                <img src={winner6} alt="winner 1" />
+              </div>
+              <p></p>
+              <div className={style.winners__sum}>
+                <p>2 454 732₽</p>
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide className={style.winner__item}>
+              <div className={style.winners__image}>
+                <img src={winner7} alt="winner 1" />
+              </div>
+              <p></p>
+              <div className={style.winners__sum}>
+                <p>312 873 513₽</p>
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide className={style.winner__item}>
+              <div className={style.winners__image}>
+                <img src={winner8} alt="winner 1" />
+              </div>
+              <p></p>
+              <div className={style.winners__sum}>
+                <p>733 333₽</p>
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide className={style.winner__item}>
+              <div className={style.winners__image}>
+                <img src={winner9} alt="winner 1" />
+              </div>
+              <p></p>
+              <div className={style.winners__sum}>
+                <p>45 231 264₽</p>
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide className={style.winner__item}>
+              <div className={style.winners__image}>
+                <img src={winner10} alt="winner 1" />
+              </div>
+              <p></p>
+              <div className={style.winners__sum}>
+                <p>517 391₽</p>
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide className={style.winner__item}>
+              <div className={style.winners__image}>
+                <img src={winner11} alt="winner 1" />
+              </div>
+              <p></p>
+              <div className={style.winners__sum}>
+                <p>56 388 464₽</p>
+              </div>
+            </SwiperSlide>
+
           </Swiper>
 
-          {window.innerWidth <= 1190 && (
+          {/* {window.innerWidth <= 1190 && ( */}
             <div className={style.winners__nav}>
               <button onClick={() => swiperRef.current?.slidePrev()}>
                 <img src={arrowLeft} alt="left" />
@@ -85,7 +174,7 @@ const Winners = () => {
                 <img src={arrowRight} alt="right" />
               </button>
             </div>
-          )}
+          {/* )} */}
         </div>
       </div>
     </section>

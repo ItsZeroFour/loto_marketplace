@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
 import "swiper/css";
 import fonbet_logo from "../../assets/images/fonbet.png";
+import soon from "../../assets/images/soon.png";
 import _100loto from "../../assets/images/100loto.png";
 import { Link } from "react-router-dom";
 import { Pagination } from "swiper/modules";
@@ -56,7 +57,7 @@ const BestLoto = ({ myRef }) => {
               <SwiperSlide>
                 <div className={style.best__loto__slide}>
                   <div className={style.best__loto__top}>
-                    <div>
+                    <div className={style.best__loto__logo}>
                       <img src={_100loto} alt="100loto" />
                       <p>Столото</p>
                     </div>
@@ -120,9 +121,9 @@ const BestLoto = ({ myRef }) => {
               <SwiperSlide>
                 <div className={style.best__loto__slide}>
                   <div className={style.best__loto__top}>
-                    <div>
-                      <img src={_100loto} alt="100loto" />
-                      <p>Столото</p>
+                    <div className={style.best__loto__logo}>
+                      <img src={soon} alt="soon" />
+                      <p>Скоро будет</p>
                     </div>
 
                     {openInfoMenuIndex === 2 && (
@@ -150,7 +151,7 @@ const BestLoto = ({ myRef }) => {
                     </button>
                   </div>
 
-                  <ul className={style.best__loto__stats}>
+                  {/* <ul className={style.best__loto__stats}>
                     <li>
                       <p>Призовой фонд:</p>
                       <p>700 000 - 4 000 000₽</p>
@@ -175,18 +176,18 @@ const BestLoto = ({ myRef }) => {
                       <p>Тип лотереи:</p>
                       <p>Розыгрыш с билетом</p>
                     </li>
-                  </ul>
+                  </ul> */}
 
-                  <Link to="#">Купить билет</Link>
+                  {/* <Link to="#">Купить билет</Link> */}
                 </div>
               </SwiperSlide>
 
               <SwiperSlide>
                 <div className={style.best__loto__slide}>
                   <div className={style.best__loto__top}>
-                    <div>
-                      <img src={_100loto} alt="100loto" />
-                      <p>Столото</p>
+                    <div className={style.best__loto__logo}>
+                      <img src={soon} alt="fonbet" />
+                      <p>Скоро будет</p>
                     </div>
 
                     {openInfoMenuIndex === 3 && (
@@ -214,7 +215,7 @@ const BestLoto = ({ myRef }) => {
                     </button>
                   </div>
 
-                  <ul className={style.best__loto__stats}>
+                  {/* <ul className={style.best__loto__stats}>
                     <li>
                       <p>Призовой фонд:</p>
                       <p>700 000 - 4 000 000₽</p>
@@ -241,7 +242,7 @@ const BestLoto = ({ myRef }) => {
                     </li>
                   </ul>
 
-                  <Link to="#">Купить билет</Link>
+                  <Link to="#">Купить билет</Link> */}
                 </div>
               </SwiperSlide>
             </Swiper>
@@ -275,7 +276,7 @@ const BestLoto = ({ myRef }) => {
               <SwiperSlide>
                 <div className={style.best__loto__slide}>
                   <div className={style.best__loto__top}>
-                    <div>
+                    <div className={style.best__loto__logo}>
                       <img src={fonbet_logo} alt="fonbet" />
                       <p>Fonbet</p>
                     </div>
@@ -339,9 +340,9 @@ const BestLoto = ({ myRef }) => {
               <SwiperSlide>
                 <div className={style.best__loto__slide}>
                   <div className={style.best__loto__top}>
-                    <div>
-                      <img src={fonbet_logo} alt="fonbet" />
-                      <p>Fonbet</p>
+                    <div className={style.best__loto__logo}>
+                      <img src={soon} alt="fonbet" />
+                      <p>Скоро будет</p>
                     </div>
 
                     {openInfoMenuIndex === 5 && (
@@ -369,7 +370,7 @@ const BestLoto = ({ myRef }) => {
                     </button>
                   </div>
 
-                  <ul className={style.best__loto__stats}>
+                  {/* <ul className={style.best__loto__stats}>
                     <li>
                       <p>Призовой фонд:</p>
                       <p>700 000 - 4 000 000₽</p>
@@ -396,16 +397,16 @@ const BestLoto = ({ myRef }) => {
                     </li>
                   </ul>
 
-                  <Link to="#">Купить билет</Link>
+                  <Link to="#">Купить билет</Link> */}
                 </div>
               </SwiperSlide>
 
               <SwiperSlide>
                 <div className={style.best__loto__slide}>
                   <div className={style.best__loto__top}>
-                    <div>
-                      <img src={fonbet_logo} alt="fonbet" />
-                      <p>Fonbet</p>
+                    <div className={style.best__loto__logo}>
+                      <img src={soon} alt="fonbet" />
+                      <p>Скоро будет</p>
                     </div>
 
                     {openInfoMenuIndex === 6 && (
@@ -433,7 +434,7 @@ const BestLoto = ({ myRef }) => {
                     </button>
                   </div>
 
-                  <ul className={style.best__loto__stats}>
+                  {/* <ul className={style.best__loto__stats}>
                     <li>
                       <p>Призовой фонд:</p>
                       <p>700 000 - 4 000 000₽</p>
@@ -460,7 +461,7 @@ const BestLoto = ({ myRef }) => {
                     </li>
                   </ul>
 
-                  <Link to="#">Купить билет</Link>
+                  <Link to="#">Купить билет</Link> */}
                 </div>
               </SwiperSlide>
             </Swiper>

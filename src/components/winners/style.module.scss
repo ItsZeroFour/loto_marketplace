@@ -36,35 +36,13 @@
     border-radius: 50%;
 
     img {
-      margin-top: 60px;
-      margin-left: 50px;
+      // margin-top: 60px;
+      // margin-left: 50px;
     }
 
     @media (max-width: 380px) {
       width: 320px;
       height: 320px;
-
-      &:nth-child(2) {
-        img {
-          margin-right: 50px;
-        }
-      }
-    }
-  }
-
-  &:nth-child(2) {
-    .winners__image {
-      img {
-        margin-left: 0;
-      }
-    }
-  }
-
-  &:last-child {
-    .winners__image {
-      img {
-        margin-left: 0;
-      }
     }
   }
 
