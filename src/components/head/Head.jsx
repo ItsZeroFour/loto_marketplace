@@ -34,7 +34,7 @@ const Head = ({ scrollToElement }) => {
                 </li>
               </ul>
 
-              <Link onClick={scrollToElement} to="#loto">
+              <Link onClick={scrollToElement} to="#loto" className="main_red_btn">
                 Купить билеты
               </Link>
             </div>

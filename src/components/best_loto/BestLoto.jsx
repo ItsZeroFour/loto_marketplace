@@ -79,6 +79,7 @@ const BestLoto = ({ myRef }) => {
                     )}
 
                     <button
+                      className="loto_buy_btn"
                       onMouseEnter={() => setOpenInfoMenuIndex(1)}
                       onMouseLeave={() => setOpenInfoMenuIndex(null)}
                       onClick={() => setOpenInfoMenuIndex(1)}
@@ -143,6 +144,7 @@ const BestLoto = ({ myRef }) => {
                     )}
 
                     <button
+                      className="fonbet_buy_btn"
                       onMouseEnter={() => setOpenInfoMenuIndex(4)}
                       onMouseLeave={() => setOpenInfoMenuIndex(null)}
                       onClick={() => setOpenInfoMenuIndex(4)}
@@ -298,6 +300,7 @@ const BestLoto = ({ myRef }) => {
                     )}
 
                     <button
+                      className="fonbet_buy_btn"
                       onMouseEnter={() => setOpenInfoMenuIndex(4)}
                       onMouseLeave={() => setOpenInfoMenuIndex(null)}
                       onClick={() => setOpenInfoMenuIndex(4)}
@@ -362,6 +365,7 @@ const BestLoto = ({ myRef }) => {
                     )}
 
                     <button
+                      className="loto_buy_btn"
                       onMouseEnter={() => setOpenInfoMenuIndex(1)}
                       onMouseLeave={() => setOpenInfoMenuIndex(null)}
                       onClick={() => setOpenInfoMenuIndex(1)}
@@ -424,7 +428,7 @@ const BestLoto = ({ myRef }) => {
                         </Link>
                       </div>
                     )}
-{/* 
+                    {/* 
                     <button
                       onMouseEnter={() => setOpenInfoMenuIndex(6)}
                       onMouseLeave={() => setOpenInfoMenuIndex(null)}

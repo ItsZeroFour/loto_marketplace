@@ -18,7 +18,7 @@ const News = ({ scrollToElement }) => {
   return (
     <section className={style.news}>
       <div className="container">
-        <div className={style.news__button}>
+        <div className={`second_red_btn ${style.news__button}`}>
           <button onClick={scrollToElement}>Купить билеты</button>
         </div>
 
