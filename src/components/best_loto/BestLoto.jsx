@@ -110,7 +110,7 @@ const BestLoto = ({ myRef }) => {
                     </li>
                   </ul>
 
-                  <Link to="#">Купить билет</Link>
+                  <Link to="https://aljerieyick.beget.app/stolotolottery">Купить билет</Link>
 
                   <p
                     style={{
@@ -182,7 +182,7 @@ const BestLoto = ({ myRef }) => {
                     </li>
                   </ul>
 
-                  <Link to="#">Купить билет</Link>
+                  <Link to="https://aljerieyick.beget.app/fonbetlottery">Купить билет</Link>
 
                   <p
                     style={{
@@ -345,7 +345,7 @@ const BestLoto = ({ myRef }) => {
                     </li>
                   </ul>
 
-                  <Link to="#">Купить билет</Link>
+                  <Link to="https://aljerieyick.beget.app/fonbetlottery">Купить билет</Link>
 
                   <p
                     style={{
@@ -417,7 +417,7 @@ const BestLoto = ({ myRef }) => {
                     </li>
                   </ul>
 
-                  <Link to="#">Купить билет</Link>
+                  <Link to="https://aljerieyick.beget.app/stolotolottery">Купить билет</Link>
 
                   <p
                     style={{
