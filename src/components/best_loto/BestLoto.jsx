@@ -131,7 +131,7 @@ const BestLoto = ({ myRef }) => {
                   <div className={style.best__loto__top}>
                     <div className={style.best__loto__logo}>
                       <img src={fonbet_logo} alt="fonbet" />
-                      <p>Fonbet</p>
+                      <p>Fonbet лотерея</p>
                     </div>
 
                     {openInfoMenuIndex === 4 && (
@@ -294,7 +294,7 @@ const BestLoto = ({ myRef }) => {
                   <div className={style.best__loto__top}>
                     <div className={style.best__loto__logo}>
                       <img src={fonbet_logo} alt="fonbet" />
-                      <p>Fonbet</p>
+                      <p>Fonbet лотерея</p>
                     </div>
 
                     {openInfoMenuIndex === 4 && (
