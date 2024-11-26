@@ -24,7 +24,7 @@ const News = ({ scrollToElement }) => {
               if (window.ym) {
                 window.ym(96184136, "reachGoal", "second_red_btn_click");
               }
-              scrollToElement;
+              scrollToElement();
             }}
           >
             Купить билеты

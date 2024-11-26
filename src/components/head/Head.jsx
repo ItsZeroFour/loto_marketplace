@@ -43,7 +43,7 @@ const Head = ({ scrollToElement }) => {
                       "main_red_btn_click"
                     );
                   }
-                  scrollToElement;
+                  scrollToElement();
                 }}
                 to="#loto"
                 className="main_red_btn"
