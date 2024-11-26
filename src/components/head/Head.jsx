@@ -45,7 +45,7 @@ const Head = ({ scrollToElement }) => {
                   }
                   scrollToElement();
                 }}
-                to="#loto"
+                to=""
                 className="main_red_btn"
               >
                 Купить билеты
