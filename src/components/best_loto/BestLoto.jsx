@@ -198,6 +198,11 @@ const BestLoto = ({
                   </ul>
 
                   <Link
+                    onClick={async () => {
+                      if (window.ym) {
+                        window.ym(96184136, "reachGoal", "loto_btn_click");
+                      }
+                    }}
                     to={`${item1_button_link}?external_id=${externalId}&utm_medium=${utmMedium}&utm_campaign=${utmCampaign}&gbid=${gbid}&utm_creative=${utmCreative}&utm_term=${utmTerm}&utm_source=${utmSource}`}
                   >
                     Купить билет
@@ -277,6 +282,11 @@ const BestLoto = ({
                   </ul>
 
                   <Link
+                    onClick={async () => {
+                      if (window.ym) {
+                        window.ym(96184136, "reachGoal", "fonbet_btn_click");
+                      }
+                    }}
                     to={`${item2_button_link}?external_id=${externalId}&utm_medium=${utmMedium}&utm_campaign=${utmCampaign}&gbid=${gbid}&utm_creative=${utmCreative}&utm_term=${utmTerm}&utm_source=${utmSource}`}
                   >
                     Купить билет
@@ -445,6 +455,11 @@ const BestLoto = ({
                   </ul>
 
                   <Link
+                    onClick={async () => {
+                      if (window.ym) {
+                        window.ym(96184136, "reachGoal", "fonbet_btn_click");
+                      }
+                    }}
                     to={`${item4_button_link}?external_id=${externalId}&utm_medium=${utmMedium}&utm_campaign=${utmCampaign}&gbid=${gbid}&utm_creative=${utmCreative}&utm_term=${utmTerm}&utm_source=${utmSource}`}
                   >
                     Купить билет
@@ -524,6 +539,11 @@ const BestLoto = ({
                   </ul>
 
                   <Link
+                    onClick={async () => {
+                      if (window.ym) {
+                        window.ym(96184136, "reachGoal", "loto_btn_click");
+                      }
+                    }}
                     to={`${item5_button_link}?external_id=${externalId}&utm_medium=${utmMedium}&utm_campaign=${utmCampaign}&gbid=${gbid}&utm_creative=${utmCreative}&utm_term=${utmTerm}&utm_source=${utmSource}`}
                   >
                     Купить билет

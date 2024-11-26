@@ -19,7 +19,16 @@ const News = ({ scrollToElement }) => {
     <section className={style.news}>
       <div className="container">
         <div className={`second_red_btn ${style.news__button}`}>
-          <button onClick={scrollToElement}>Купить билеты</button>
+          <button
+            onClick={() => {
+              if (window.ym) {
+                window.ym(96184136, "reachGoal", "second_red_btn_click");
+              }
+              scrollToElement;
+            }}
+          >
+            Купить билеты
+          </button>
         </div>
 
         <div className={style.news__wrapper}>

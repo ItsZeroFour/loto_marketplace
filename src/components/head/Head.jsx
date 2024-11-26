@@ -34,7 +34,20 @@ const Head = ({ scrollToElement }) => {
                 </li>
               </ul>
 
-              <Link onClick={scrollToElement} to="#loto" className="main_red_btn">
+              <Link
+                onClick={async () => {
+                  if (window.ym) {
+                    await window.ym(
+                      96184136,
+                      "reachGoal",
+                      "main_red_btn_click"
+                    );
+                  }
+                  scrollToElement;
+                }}
+                to="#loto"
+                className="main_red_btn"
+              >
                 Купить билеты
               </Link>
             </div>
