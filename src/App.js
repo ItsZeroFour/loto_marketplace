@@ -19,7 +19,6 @@ function App() {
   const [searchParams] = useSearchParams();
 
   const [externalId, setExternalId] = useState("");
-  const [utmMedium, setUtmMedium] = useState("");
   const [utmCampaign, setUtmCampaign] = useState("");
   const [gbid, setGbid] = useState("");
   const [utmCreative, setUtmCreative] = useState("");
@@ -29,7 +28,6 @@ function App() {
   useEffect(() => {
     function setUtmToLocalstorage() {
       localStorage.setItem("external_id", searchParams.get("external_id"));
-      localStorage.setItem("utm_medium", searchParams.get("utm_medium"));
       localStorage.setItem("utm_campaign", searchParams.get("utm_campaign"));
       localStorage.setItem("gbid", searchParams.get("gbid"));
       localStorage.setItem("utm_creative", searchParams.get("utm_creative"));
@@ -39,13 +37,14 @@ function App() {
 
     if (
       searchParams.get("external_id") &&
-      searchParams.get("utm_medium") &&
       searchParams.get("utm_campaign") &&
       searchParams.get("gbid") &&
       searchParams.get("utm_creative") &&
       searchParams.get("utm_term") &&
       searchParams.get("utm_source")
     ) {
+      console.log(123);
+
       setUtmToLocalstorage();
     }
 
@@ -53,11 +52,6 @@ function App() {
       searchParams.get("external_id") !== null
         ? searchParams.get("external_id")
         : localStorage.getItem("external_id")
-    );
-    setUtmMedium(
-      searchParams.get("utm_medium") !== null
-        ? searchParams.get("utm_medium")
-        : localStorage.getItem("utm_medium")
     );
     setUtmCampaign(
       searchParams.get("utm_campaign") !== null
@@ -135,7 +129,6 @@ function App() {
               <Gifts />
               <BestLoto
                 externalId={externalId}
-                utmMedium={utmMedium}
                 utmCampaign={utmCampaign}
                 gbid={gbid}
                 utmCreative={utmCreative}
