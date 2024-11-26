@@ -10,7 +10,91 @@ import { Link } from "react-router-dom";
 import { Pagination } from "swiper/modules";
 import info from "../../assets/icons/info.svg";
 
-const BestLoto = ({ myRef }) => {
+const BestLoto = ({
+  myRef,
+  item1_list1_text,
+  item1_list1_title,
+  item1_list2_text,
+  item1_list2_title,
+  item1_list3_text,
+  item1_list3_title,
+  item1_list4_text,
+  item1_list4_title,
+
+  item2_list1_text,
+  item2_list1_title,
+  item2_list2_text,
+  item2_list2_title,
+  item2_list3_text,
+  item2_list3_title,
+  item2_list4_text,
+  item2_list4_title,
+
+  item3_list1_text,
+  item3_list1_title,
+  item3_list2_text,
+  item3_list2_title,
+  item3_list3_text,
+  item3_list3_title,
+  item3_list4_text,
+  item3_list4_title,
+
+  item4_list1_text,
+  item4_list1_title,
+  item4_list2_text,
+  item4_list2_title,
+  item4_list3_text,
+  item4_list3_title,
+  item4_list4_text,
+  item4_list4_title,
+
+  item5_list1_text,
+  item5_list1_title,
+  item5_list2_text,
+  item5_list2_title,
+  item5_list3_text,
+  item5_list3_title,
+  item5_list4_text,
+  item5_list4_title,
+
+  item6_list1_text,
+  item6_list1_title,
+  item6_list2_text,
+  item6_list2_title,
+  item6_list3_text,
+  item6_list3_title,
+  item6_list4_text,
+  item6_list4_title,
+
+  item1_logo,
+  item2_logo,
+  item3_logo,
+  item4_logo,
+  item5_logo,
+  item6_logo,
+
+  item1_title,
+  item2_title,
+  item3_title,
+  item4_title,
+  item5_title,
+  item6_title,
+
+  externalId,
+  utmMedium,
+  utmCampaign,
+  gbid,
+  utmCreative,
+  utmTerm,
+  utmSource,
+
+  item1_button_link,
+  item2_button_link,
+  item3_button_link,
+  item4_button_link,
+  item5_button_link,
+  item6_button_link,
+}) => {
   const [itemText, setItemText] = useState("");
   const [openInfoMenuIndex, setOpenInfoMenuIndex] = useState(null);
 
@@ -58,8 +142,11 @@ const BestLoto = ({ myRef }) => {
                 <div className={style.best__loto__slide}>
                   <div className={style.best__loto__top}>
                     <div className={style.best__loto__logo}>
-                      <img src={_100loto} alt="100loto" />
-                      <p>Столото</p>
+                      <img
+                        src={`${process.env.REACT_APP_SERVER_URL}${item1_logo}`}
+                        alt="100loto"
+                      />
+                      <p>{item1_title}</p>
                     </div>
 
                     {openInfoMenuIndex === 1 && (
@@ -90,27 +177,31 @@ const BestLoto = ({ myRef }) => {
 
                   <ul className={style.best__loto__stats}>
                     <li>
-                      <p>Призовой фонд:</p>
-                      <p>700 000 - 4 000 000₽</p>
+                      <p>{item1_list1_title}</p>
+                      <p>{item1_list1_text}</p>
                     </li>
 
                     <li>
-                      <p>Стоимость билета:</p>
-                      <p>от 150₽</p>
+                      <p>{item1_list2_title}</p>
+                      <p>{item1_list2_text}</p>
                     </li>
 
                     <li>
-                      <p>Популярность:</p>
-                      <p>Популярна</p>
+                      <p>{item1_list3_title}</p>
+                      <p>{item1_list3_text}</p>
                     </li>
 
                     <li>
-                      <p>Тип лотереи:</p>
-                      <p>Розыгрыш онлайн и с билетами</p>
+                      <p>{item1_list4_title}</p>
+                      <p>{item1_list4_text}</p>
                     </li>
                   </ul>
 
-                  <Link to="https://aljerieyick.beget.app/stolotolottery">Купить билет</Link>
+                  <Link
+                    to={`${item1_button_link}?external_id=${externalId}&utm_medium=${utmMedium}&utm_campaign=${utmCampaign}&gbid=${gbid}&utm_creative=${utmCreative}&utm_term=${utmTerm}&utm_source=${utmSource}`}
+                  >
+                    Купить билет
+                  </Link>
 
                   <p
                     style={{
@@ -130,8 +221,11 @@ const BestLoto = ({ myRef }) => {
                 <div className={style.best__loto__slide}>
                   <div className={style.best__loto__top}>
                     <div className={style.best__loto__logo}>
-                      <img src={fonbet_logo} alt="fonbet" />
-                      <p>Fonbet лотерея</p>
+                      <img
+                        src={`${process.env.REACT_APP_SERVER_URL}${item2_logo}`}
+                        alt="fonbet"
+                      />
+                      <p>{item2_title}</p>
                     </div>
 
                     {openInfoMenuIndex === 4 && (
@@ -162,27 +256,31 @@ const BestLoto = ({ myRef }) => {
 
                   <ul className={style.best__loto__stats}>
                     <li>
-                      <p>Призовой фонд:</p>
-                      <p>700 000 - 4 000 000₽</p>
+                      <p>{item2_list1_title}</p>
+                      <p>{item2_list1_text}</p>
                     </li>
 
                     <li>
-                      <p>Стоимость билета:</p>
-                      <p>от 80₽</p>
+                      <p>{item2_list2_title}</p>
+                      <p>{item2_list2_text}</p>
                     </li>
 
                     <li>
-                      <p>Популярность:</p>
-                      <p>Популярна</p>
+                      <p>{item2_list3_title}</p>
+                      <p>{item2_list3_text}</p>
                     </li>
 
                     <li>
-                      <p>Тип лотереи:</p>
-                      <p>Розыгрыш онлайн</p>
+                      <p>{item2_list4_title}</p>
+                      <p>{item2_list4_text}</p>
                     </li>
                   </ul>
 
-                  <Link to="https://aljerieyick.beget.app/fonbetlottery">Купить билет</Link>
+                  <Link
+                    to={`${item2_button_link}?external_id=${externalId}&utm_medium=${utmMedium}&utm_campaign=${utmCampaign}&gbid=${gbid}&utm_creative=${utmCreative}&utm_term=${utmTerm}&utm_source=${utmSource}`}
+                  >
+                    Купить билет
+                  </Link>
 
                   <p
                     style={{
@@ -202,8 +300,11 @@ const BestLoto = ({ myRef }) => {
                 <div className={style.best__loto__slide}>
                   <div className={style.best__loto__top}>
                     <div className={style.best__loto__logo}>
-                      <img src={soon} alt="fonbet" />
-                      <p>Скоро будет</p>
+                      <img
+                        src={`${process.env.REACT_APP_SERVER_URL}${item3_logo}`}
+                        alt="fonbet"
+                      />
+                      <p>{item3_title}</p>
                     </div>
 
                     {openInfoMenuIndex === 3 && (
@@ -231,34 +332,29 @@ const BestLoto = ({ myRef }) => {
                     </button> */}
                   </div>
 
-                  {/* <ul className={style.best__loto__stats}>
+                  <ul className={style.best__loto__stats}>
                     <li>
-                      <p>Призовой фонд:</p>
-                      <p>700 000 - 4 000 000₽</p>
+                      <p>{item3_list1_title}</p>
+                      <p>{item3_list1_text}</p>
                     </li>
 
                     <li>
-                      <p>Стоимость билета:</p>
-                      <p>250₽</p>
+                      <p>{item3_list2_title}</p>
+                      <p>{item3_list2_text}</p>
                     </li>
 
                     <li>
-                      <p>Шанс на выигрыш:</p>
-                      <p>10%</p>
+                      <p>{item3_list3_title}</p>
+                      <p>{item3_list3_text}</p>
                     </li>
 
                     <li>
-                      <p>Популярность:</p>
-                      <p>Популярна</p>
-                    </li>
-
-                    <li>
-                      <p>Тип лотереи:</p>
-                      <p>Розыгрыш с билетами</p>
+                      <p>{item3_list4_title}</p>
+                      <p>{item3_list4_text}</p>
                     </li>
                   </ul>
 
-                  <Link to="#">Купить билет</Link> */}
+                  {/* <Link to={`${item3_button_link}?external_id=${externalId}&utm_medium=${utmMedium}&utm_campaign=${utmCampaign}&gbid=${gbid}&utm_creative=${utmCreative}&utm_term=${utmTerm}&utm_source=${utmSource}`}>Купить билет</Link> */}
                 </div>
               </SwiperSlide>
             </Swiper>
@@ -293,8 +389,11 @@ const BestLoto = ({ myRef }) => {
                 <div className={style.best__loto__slide}>
                   <div className={style.best__loto__top}>
                     <div className={style.best__loto__logo}>
-                      <img src={fonbet_logo} alt="fonbet" />
-                      <p>Fonbet лотерея</p>
+                      <img
+                        src={`${process.env.REACT_APP_SERVER_URL}${item4_logo}`}
+                        alt="fonbet"
+                      />
+                      <p>{item4_title}</p>
                     </div>
 
                     {openInfoMenuIndex === 4 && (
@@ -325,27 +424,31 @@ const BestLoto = ({ myRef }) => {
 
                   <ul className={style.best__loto__stats}>
                     <li>
-                      <p>Призовой фонд:</p>
-                      <p>700 000 - 4 000 000₽</p>
+                      <p>{item4_list1_title}</p>
+                      <p>{item4_list1_text}</p>
                     </li>
 
                     <li>
-                      <p>Стоимость билета:</p>
-                      <p>от 80₽</p>
+                      <p>{item4_list2_title}</p>
+                      <p>{item4_list2_text}</p>
                     </li>
 
                     <li>
-                      <p>Популярность:</p>
-                      <p>Популярна</p>
+                      <p>{item4_list3_title}</p>
+                      <p>{item4_list3_text}</p>
                     </li>
 
                     <li>
-                      <p>Тип лотереи:</p>
-                      <p>Розыгрыш онлайн</p>
+                      <p>{item4_list4_title}</p>
+                      <p>{item4_list4_text}</p>
                     </li>
                   </ul>
 
-                  <Link to="https://aljerieyick.beget.app/fonbetlottery">Купить билет</Link>
+                  <Link
+                    to={`${item4_button_link}?external_id=${externalId}&utm_medium=${utmMedium}&utm_campaign=${utmCampaign}&gbid=${gbid}&utm_creative=${utmCreative}&utm_term=${utmTerm}&utm_source=${utmSource}`}
+                  >
+                    Купить билет
+                  </Link>
 
                   <p
                     style={{
@@ -365,8 +468,11 @@ const BestLoto = ({ myRef }) => {
                 <div className={style.best__loto__slide}>
                   <div className={style.best__loto__top}>
                     <div className={style.best__loto__logo}>
-                      <img src={_100loto} alt="100loto" />
-                      <p>Столото</p>
+                      <img
+                        src={`${process.env.REACT_APP_SERVER_URL}${item5_logo}`}
+                        alt="100loto"
+                      />
+                      <p>{item5_title}</p>
                     </div>
 
                     {openInfoMenuIndex === 1 && (
@@ -397,27 +503,31 @@ const BestLoto = ({ myRef }) => {
 
                   <ul className={style.best__loto__stats}>
                     <li>
-                      <p>Призовой фонд:</p>
-                      <p>700 000 - 4 000 000₽</p>
+                      <p>{item5_list1_title}</p>
+                      <p>{item5_list1_text}</p>
                     </li>
 
                     <li>
-                      <p>Стоимость билета:</p>
-                      <p>от 150₽</p>
+                      <p>{item5_list2_title}</p>
+                      <p>{item5_list2_text}</p>
                     </li>
 
                     <li>
-                      <p>Популярность:</p>
-                      <p>Популярна</p>
+                      <p>{item5_list3_title}</p>
+                      <p>{item5_list3_text}</p>
                     </li>
 
                     <li>
-                      <p>Тип лотереи:</p>
-                      <p>Розыгрыш онлайн и с билетами</p>
+                      <p>{item5_list4_title}</p>
+                      <p>{item5_list4_text}</p>
                     </li>
                   </ul>
 
-                  <Link to="https://aljerieyick.beget.app/stolotolottery">Купить билет</Link>
+                  <Link
+                    to={`${item5_button_link}?external_id=${externalId}&utm_medium=${utmMedium}&utm_campaign=${utmCampaign}&gbid=${gbid}&utm_creative=${utmCreative}&utm_term=${utmTerm}&utm_source=${utmSource}`}
+                  >
+                    Купить билет
+                  </Link>
 
                   <p
                     style={{
@@ -437,8 +547,11 @@ const BestLoto = ({ myRef }) => {
                 <div className={style.best__loto__slide}>
                   <div className={style.best__loto__top}>
                     <div className={style.best__loto__logo}>
-                      <img src={soon} alt="fonbet" />
-                      <p>Скоро будет</p>
+                      <img
+                        src={`${process.env.REACT_APP_SERVER_URL}${item6_logo}`}
+                        alt="fonbet"
+                      />
+                      <p>{item6_title}</p>
                     </div>
 
                     {openInfoMenuIndex === 6 && (
@@ -466,34 +579,29 @@ const BestLoto = ({ myRef }) => {
                     </button> */}
                   </div>
 
-                  {/* <ul className={style.best__loto__stats}>
+                  <ul className={style.best__loto__stats}>
                     <li>
-                      <p>Призовой фонд:</p>
-                      <p>700 000 - 4 000 000₽</p>
+                      <p>{item6_list1_title}</p>
+                      <p>{item6_list1_text}</p>
                     </li>
 
                     <li>
-                      <p>Стоимость билета:</p>
-                      <p>250₽</p>
+                      <p>{item6_list2_title}</p>
+                      <p>{item6_list2_text}</p>
                     </li>
 
                     <li>
-                      <p>Шанс на выигрыш:</p>
-                      <p>10%</p>
+                      <p>{item6_list3_title}</p>
+                      <p>{item6_list3_text}</p>
                     </li>
 
                     <li>
-                      <p>Популярность:</p>
-                      <p>Популярна</p>
-                    </li>
-
-                    <li>
-                      <p>Тип лотереи:</p>
-                      <p>Розыгрыш с билетами</p>
+                      <p>{item6_list4_title}</p>
+                      <p>{item6_list4_text}</p>
                     </li>
                   </ul>
 
-                  <Link to="#">Купить билет</Link> */}
+                  {/* <Link to={`${item6_button_link}?external_id=${externalId}&utm_medium=${utmMedium}&utm_campaign=${utmCampaign}&gbid=${gbid}&utm_creative=${utmCreative}&utm_term=${utmTerm}&utm_source=${utmSource}`}>Купить билет</Link> */}
                 </div>
               </SwiperSlide>
             </Swiper>
