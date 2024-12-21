@@ -9,6 +9,7 @@ import News from "./components/news/News";
 import Winners from "./components/winners/Winners";
 import axios from "./utils/axios";
 import { useSearchParams } from "react-router-dom";
+import Banner from "./components/banner/Banner";
 
 function App() {
   const myRef = useRef(null);
@@ -24,6 +25,8 @@ function App() {
   const [utmCreative, setUtmCreative] = useState("");
   const [utmTerm, setUtmTerm] = useState("");
   const [utmSource, setUtmSource] = useState("");
+
+  const [os, setOs] = useState("");
 
   useEffect(() => {
     function setUtmToLocalstorage() {
@@ -112,8 +115,22 @@ function App() {
     getData();
   }, []);
 
+  useEffect(() => {
+    const checkOs = (agent) => {
+      if (agent.indexOf("Android") > 0) {
+        setOs("Android");
+      }
+    };
+
+    checkOs(navigator.userAgent);
+  }, []);
+
+  console.log(navigator.userAgent.indexOf("Android"));
+
   return (
     <div className="App">
+      {os === "Android" && <Banner />}
+
       <div className="page">
         {!data ? (
           <div class="preloader">
