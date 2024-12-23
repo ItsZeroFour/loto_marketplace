@@ -17,7 +17,7 @@ const Banner = () => {
 
             <div>
               <Link
-                to="https://www.rustore.ru/catalog/app/app.lotoonline.fofun"
+                to="https://redirect.appmetrica.yandex.com/serve/533511020606418413"
                 target="_blank"
               >
                 Скачать
