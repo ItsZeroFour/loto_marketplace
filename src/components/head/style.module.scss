@@ -110,6 +110,7 @@
 .head__left {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
   @media (max-width: 1190px) {
     flex-direction: column;

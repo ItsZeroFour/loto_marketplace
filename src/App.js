@@ -10,6 +10,7 @@ import Winners from "./components/winners/Winners";
 import axios from "./utils/axios";
 import { useSearchParams } from "react-router-dom";
 import Banner from "./components/banner/Banner";
+import { metaTags } from "../src/data/meta";
 
 function App() {
   const myRef = useRef(null);
@@ -26,6 +27,7 @@ function App() {
   const [utmTerm, setUtmTerm] = useState("");
   const [utmSource, setUtmSource] = useState("");
 
+  const [tags, setTags] = useState(metaTags.default);
   const [os, setOs] = useState("");
 
   useEffect(() => {
@@ -125,7 +127,25 @@ function App() {
     checkOs(navigator.userAgent);
   }, []);
 
-  console.log(navigator.userAgent.indexOf("Android"));
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const utmContent = params.get("utm_content");
+
+    if (utmContent && metaTags[utmContent]) {
+      setTags(metaTags[utmContent]);
+    }
+  }, []);
+
+  useEffect(() => {
+    document.title = tags.title.replace(/&mdash;/g, "—");
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute(
+        "content",
+        tags.description.replace(/&mdash;/g, "—")
+      );
+    }
+  }, [tags]);
 
   return (
     <div className="App">
@@ -142,7 +162,7 @@ function App() {
             <Header />
 
             <main>
-              <Head scrollToElement={scrollToElement} />
+              <Head scrollToElement={scrollToElement} tags={tags} />
               <Gifts />
               <BestLoto
                 externalId={externalId}

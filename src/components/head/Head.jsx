@@ -3,16 +3,14 @@ import style from "./style.module.scss";
 import woman from "../../assets/images/woman.png";
 import { Link } from "react-router-dom";
 
-const Head = ({ scrollToElement }) => {
+const Head = ({ scrollToElement, tags }) => {
   return (
     <section className={style.head}>
       <div className="container">
         <div className={style.head__wrapper}>
           <aside className={style.head__left}>
             <div className={style.head__main}>
-              <h1>
-                Ваш шанс на выигрыш в один клик! <br /> Лотерейные билеты онлайн
-              </h1>
+              <h1>{tags.h1}</h1>
 
               <div className={style.head__image_con}>
                 <div className={`${style.head__image} ${style.head__image_2}`}>
