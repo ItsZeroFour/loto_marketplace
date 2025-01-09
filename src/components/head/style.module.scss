@@ -16,7 +16,7 @@
 
 .head__image_con {
   @media (max-width: 1190px) {
-    width: 100vw;
+    // width: 100vw;
 
     display: flex;
     justify-content: center;
@@ -33,20 +33,20 @@
 }
 
 .head__image {
-  width: 805px;
-  height: 605px;
+  width: 505px;
+  height: 505px;
   border-radius: 50%;
   background: var(--color-white);
   overflow: hidden;
 
   @media (max-width: 1190px) {
-    width: 605px;
-    height: 605px;
+    width: 505px;
+    height: 505px;
   }
 
   @media (max-width: 670px) {
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
   }
 
   @media (max-width: 520px) {
@@ -95,8 +95,12 @@
   flex-direction: column;
   gap: 20px;
   position: relative;
+  
+  width: 50vw;
 
   @media (max-width: 1190px) {
+    width: 100vw;
+
     ul {
       order: 1;
     }
