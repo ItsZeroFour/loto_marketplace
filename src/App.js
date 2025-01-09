@@ -26,6 +26,7 @@ function App() {
   const [utmCreative, setUtmCreative] = useState("");
   const [utmTerm, setUtmTerm] = useState("");
   const [utmSource, setUtmSource] = useState("");
+  const [utmContent, setUtmContent] = useState("");
 
   const [tags, setTags] = useState(metaTags.default);
   const [os, setOs] = useState("");
@@ -38,6 +39,7 @@ function App() {
       localStorage.setItem("utm_creative", searchParams.get("utm_creative"));
       localStorage.setItem("utm_term", searchParams.get("utm_term"));
       localStorage.setItem("utm_source", searchParams.get("utm_source"));
+      localStorage.setItem("utm_content", searchParams.get("utm_content"));
     }
 
     if (
@@ -46,7 +48,8 @@ function App() {
       searchParams.get("gbid") &&
       searchParams.get("utm_creative") &&
       searchParams.get("utm_term") &&
-      searchParams.get("utm_source")
+      searchParams.get("utm_source") &&
+      searchParams.get("utm_content")
     ) {
       console.log(123);
 
@@ -82,6 +85,11 @@ function App() {
       searchParams.get("utm_source") !== null
         ? searchParams.get("utm_source")
         : localStorage.getItem("utm_source")
+    );
+    setUtmContent(
+      searchParams.get("utm_content") !== null
+        ? searchParams.get("utm_content")
+        : localStorage.getItem("utm_content")
     );
   }, [searchParams]);
 
@@ -172,6 +180,7 @@ function App() {
                 utmTerm={utmTerm}
                 utmSource={utmSource}
                 myRef={myRef}
+                utmContent={utmContent}
                 item1_list1_text={data.item1_list1_text}
                 item1_list1_title={data.item1_list1_title}
                 item1_list2_text={data.item1_list2_text}

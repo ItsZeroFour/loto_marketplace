@@ -94,6 +94,8 @@ const BestLoto = ({
   item4_button_link,
   item5_button_link,
   item6_button_link,
+
+  utmContent
 }) => {
   const [itemText, setItemText] = useState("");
   const [openInfoMenuIndex, setOpenInfoMenuIndex] = useState(null);
@@ -203,7 +205,7 @@ const BestLoto = ({
                         window.ym(96184136, "reachGoal", "loto_btn_click");
                       }
                     }}
-                    to={`${item1_button_link}?external_id=${externalId}&utm_medium=${utmMedium}&utm_campaign=${utmCampaign}&gbid=${gbid}&utm_creative=${utmCreative}&utm_term=${utmTerm}&utm_source=${utmSource}`}
+                    to={`${item1_button_link}?external_id=${externalId}&utm_medium=${utmMedium}&utm_campaign=${utmCampaign}&gbid=${gbid}&utm_creative=${utmCreative}&utm_term=${utmTerm}&utm_source=${utmSource}&utm_content=${utmContent}`}
                   >
                     Купить билет
                   </Link>
@@ -287,7 +289,7 @@ const BestLoto = ({
                         window.ym(96184136, "reachGoal", "fonbet_btn_click");
                       }
                     }}
-                    to={`${item2_button_link}?external_id=${externalId}&utm_medium=${utmMedium}&utm_campaign=${utmCampaign}&gbid=${gbid}&utm_creative=${utmCreative}&utm_term=${utmTerm}&utm_source=${utmSource}`}
+                    to={`${item2_button_link}?external_id=${externalId}&utm_medium=${utmMedium}&utm_campaign=${utmCampaign}&gbid=${gbid}&utm_creative=${utmCreative}&utm_term=${utmTerm}&utm_source=${utmSource}&utm_content=${utmContent}`}
                   >
                     Купить билет
                   </Link>
@@ -460,7 +462,7 @@ const BestLoto = ({
                         window.ym(96184136, "reachGoal", "fonbet_btn_click");
                       }
                     }}
-                    to={`${item4_button_link}?external_id=${externalId}&utm_medium=${utmMedium}&utm_campaign=${utmCampaign}&gbid=${gbid}&utm_creative=${utmCreative}&utm_term=${utmTerm}&utm_source=${utmSource}`}
+                    to={`${item4_button_link}?external_id=${externalId}&utm_medium=${utmMedium}&utm_campaign=${utmCampaign}&gbid=${gbid}&utm_creative=${utmCreative}&utm_term=${utmTerm}&utm_source=${utmSource}&utm_content=${utmContent}`}
                   >
                     Купить билет
                   </Link>
@@ -544,7 +546,7 @@ const BestLoto = ({
                         window.ym(96184136, "reachGoal", "loto_btn_click");
                       }
                     }}
-                    to={`${item5_button_link}?external_id=${externalId}&utm_medium=${utmMedium}&utm_campaign=${utmCampaign}&gbid=${gbid}&utm_creative=${utmCreative}&utm_term=${utmTerm}&utm_source=${utmSource}`}
+                    to={`${item5_button_link}?external_id=${externalId}&utm_medium=${utmMedium}&utm_campaign=${utmCampaign}&gbid=${gbid}&utm_creative=${utmCreative}&utm_term=${utmTerm}&utm_source=${utmSource}&utm_content=${utmContent}`}
                   >
                     Купить билет
                   </Link>

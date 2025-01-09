@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import logo from "../../assets/logo.svg";
 import org1 from "../../assets/images/minfin.png";
 import org2 from "../../assets/images/minsport.png";
+import file from "../../assets/privacy_stoloto.pdf";
 
 const Footer = () => {
   return (
@@ -18,6 +19,10 @@ const Footer = () => {
             <Link to="https://static.stoloto.ru/files/documents/polozhenie_ob_amk_bez_prikaza.pdf">
               Положение о соблюдении антимонопольного законодательства АО «ТК
               «Центр»
+            </Link>
+
+            <Link to={file} target="_blank">
+              Политика в отношении обработки персональных данных
             </Link>
 
             <h3>18+</h3>
