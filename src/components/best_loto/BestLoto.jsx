@@ -118,7 +118,7 @@ const BestLoto = ({
           <h2>Лучшие Лотереи в Одном Месте</h2>
 
           <div className={style.best__loto__slide_1}>
-            <Swiper
+            {/* <Swiper
               modules={[Pagination]}
               spaceBetween={30} // Отступ между слайдами
               slidesPerView={2} // Изначально показываем два слайда
@@ -139,8 +139,8 @@ const BestLoto = ({
                 type: "bullets",
                 clickable: true,
               }}
-            >
-              <SwiperSlide>
+            > */}
+              {/* <SwiperSlide> */}
                 <div className={style.best__loto__slide}>
                   <div className={style.best__loto__top}>
                     <div className={style.best__loto__logo}>
@@ -222,9 +222,9 @@ const BestLoto = ({
                     РФ.
                   </p>
                 </div>
-              </SwiperSlide>
+              {/* </SwiperSlide> */}
 
-              <SwiperSlide>
+              {/* <SwiperSlide> */}
                 <div className={style.best__loto__slide}>
                   <div className={style.best__loto__top}>
                     <div className={style.best__loto__logo}>
@@ -306,9 +306,9 @@ const BestLoto = ({
                     РФ.
                   </p>
                 </div>
-              </SwiperSlide>
+              {/* </SwiperSlide> */}
 
-              <SwiperSlide>
+              {/* <SwiperSlide> */}
                 <div className={style.best__loto__slide}>
                   <div className={style.best__loto__top}>
                     <div className={style.best__loto__logo}>
@@ -335,13 +335,13 @@ const BestLoto = ({
                       </div>
                     )}
 
-                    {/* <button
+                    <button
                       onMouseEnter={() => setOpenInfoMenuIndex(3)}
                       onMouseLeave={() => setOpenInfoMenuIndex(null)}
                       onClick={() => setOpenInfoMenuIndex(3)}
                     >
                       <img src={info} alt="info" />
-                    </button> */}
+                    </button>
                   </div>
 
                   <ul className={style.best__loto__stats}>
@@ -366,21 +366,32 @@ const BestLoto = ({
                     </li>
                   </ul>
 
-                  {/* <Link to={`${item3_button_link}?external_id=${externalId}&utm_medium=${utmMedium}&utm_campaign=${utmCampaign}&gbid=${gbid}&utm_creative=${utmCreative}&utm_term=${utmTerm}&utm_source=${utmSource}`}>Купить билет</Link> */}
+                  <Link to={`${item3_button_link}?external_id=${externalId}&utm_medium=${utmMedium}&utm_campaign=${utmCampaign}&gbid=${gbid}&utm_creative=${utmCreative}&utm_term=${utmTerm}&utm_source=${utmSource}`}>Купить билет</Link>
+                
+                  <p
+                    style={{
+                      fontSize: 10,
+                      textAlign: "center",
+                      marginTop: "20px",
+                    }}
+                  >
+                    Организаторами всероссийских государственных лотерей
+                    выступают — Министерство финансов РФ и Министерство спорта
+                    РФ.
+                  </p>
                 </div>
-              </SwiperSlide>
-            </Swiper>
+              {/* </SwiperSlide> */}
+            {/* </Swiper> */}
 
             <div className="custom-pagination"></div>
           </div>
 
-          <div className={style.best__loto__slide_2}>
+          {/* <div className={style.best__loto__slide_2}>
             <Swiper
               modules={[Pagination]}
-              spaceBetween={30} // Отступ между слайдами
-              slidesPerView={2} // Изначально показываем два слайда
+              spaceBetween={30}
+              slidesPerView={2}
               breakpoints={{
-                // Указываем, что на ширине 600 и меньше будет 1 слайд
                 1200: {
                   slidesPerView: 2,
                 },
@@ -591,14 +602,14 @@ const BestLoto = ({
                         </Link>
                       </div>
                     )}
-                    {/* 
+                    
                     <button
                       onMouseEnter={() => setOpenInfoMenuIndex(6)}
                       onMouseLeave={() => setOpenInfoMenuIndex(null)}
                       onClick={() => setOpenInfoMenuIndex(6)}
                     >
                       <img src={info} alt="info" />
-                    </button> */}
+                    </button>
                   </div>
 
                   <ul className={style.best__loto__stats}>
@@ -623,13 +634,13 @@ const BestLoto = ({
                     </li>
                   </ul>
 
-                  {/* <Link to={`${item6_button_link}?external_id=${externalId}&utm_medium=${utmMedium}&utm_campaign=${utmCampaign}&gbid=${gbid}&utm_creative=${utmCreative}&utm_term=${utmTerm}&utm_source=${utmSource}`}>Купить билет</Link> */}
+                  <Link to={`${item6_button_link}?external_id=${externalId}&utm_medium=${utmMedium}&utm_campaign=${utmCampaign}&gbid=${gbid}&utm_creative=${utmCreative}&utm_term=${utmTerm}&utm_source=${utmSource}`}>Купить билет</Link>
                 </div>
               </SwiperSlide>
             </Swiper>
 
             <div className="custom-pagination-2"></div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

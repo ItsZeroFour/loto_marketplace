@@ -12,24 +12,44 @@
   }
 }
 
+.best__loto__slide_1 {
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: 1250px) {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.best__loto__logo {
+  p {
+    font-size: 16px;
+  }
+}
+
 .best__loto__slide {
-  width: 560px;
+  width: 400px;
   height: 470px;
   background: rgba(255, 255, 255, 0.15);
   padding: 25px;
   border-radius: 30px;
 
-  @media (max-width: 1190px) {
-    width: 95%;
+  @media (max-width: 1250px) {
+    width: 100%;
   }
 
-  @media (max-width: 520px) {
-    width: 90%;
-  }
+  // @media (max-width: 1190px) {
+  //   width: 95%;
+  // }
 
-  @media (max-width: 430px) {
-    width: 83vw;
-  }
+  // @media (max-width: 520px) {
+  //   width: 90%;
+  // }
+
+  // @media (max-width: 430px) {
+  //   width: 83vw;
+  // }
 }
 
 .best__loto__top {
@@ -84,24 +104,24 @@
     align-items: center;
 
     p:first-child {
-      font-size: 20px;
+      font-size: 14px;
 
       @media (max-width: 520px) {
-        font-size: 16px;
+        font-size: 12px;
       }
     }
 
     p:last-child {
-      font-size: 22px;
+      font-size: 14px;
       font-family: "Montserrat-sb", sans-serif;
       font-weight: 600;
 
       @media (max-width: 520px) {
-        font-size: 20px;
+        font-size: 12px;
       }
 
       @media (max-width: 450px) {
-        font-size: 16px;
+        font-size: 12px;
       }
     }
   }
@@ -137,20 +157,12 @@
   a {
     margin-top: 40px;
     display: block;
-    width: 93%;
+    width: 100%;
     background: #4c84ff;
     color: var(--color-white);
     text-align: center;
     border-radius: 30px;
     padding: 20px;
-
-    @media (max-width: 1190px) {
-      width: 96%;
-    }
-
-    @media (max-width: 520px) {
-      width: 90%;
-    }
   }
 }
 
